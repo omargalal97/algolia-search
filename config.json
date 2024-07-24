@@ -1,0 +1,28 @@
+{
+    "index_name": "Docusurus-Search",
+    "sitemaps": [
+      "http://localhost:3000/sitemap.xml"
+    ],
+    "selectors": {
+      "lvl0": {
+        "selector": ".navbar__link--active",
+        "global": true,
+        "default_value": "Documentation"
+      },
+      "lvl1": ".menu__list-item-active > a",
+      "lvl2": ".theme-doc-markdown h1",
+      "lvl3": ".theme-doc-markdown h2",
+      "lvl4": ".theme-doc-markdown h3",
+      "lvl5": ".theme-doc-markdown h4",
+      "lvl6": ".theme-doc-markdown h5",
+      "text": ".theme-doc-markdown p, .theme-doc-markdown li"
+    },
+    "custom_settings": {
+      "attributesForFaceting": ["language", "version", "tags"],
+      "attributesToRetrieve": ["hierarchy", "content", "url", "anchor"],
+      "attributesToHighlight": ["hierarchy", "content"],
+      "attributesToSnippet": ["content:10"],
+      "highlightPreTag": "<mark>",
+      "highlightPostTag": "</mark>"
+    }
+  }
