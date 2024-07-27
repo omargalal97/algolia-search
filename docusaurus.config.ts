@@ -2,7 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const config: Config = {
+module.exports = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
@@ -56,10 +56,10 @@ const config: Config = {
 
   themeConfig: {
     algolia: {
-      apiKey:'885cb913affb74f364e1c1b0ad022fc8',
-      indexName:'Docusurus-Search',
+      apiKey:'56022df07c97918376a03be57e5a259d',
+      indexName:'docs-new',
       contextualSearch:true,
-      appId:'69SU7FXB8N'
+      appId:'IXOBMSNBAY'
 
     },
     // Replace with your project's social card
@@ -137,4 +137,4 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 };
 
-export default config;
+// export default config; 
